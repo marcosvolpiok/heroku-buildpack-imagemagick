@@ -37,7 +37,7 @@ if [ ! -f $CACHE_FILE ]; then
   cd $IMAGE_MAGICK_DIR
   export CPPFLAGS="-I$INSTALL_DIR/include"
   export LDFLAGS="-L$INSTALL_DIR/lib"
-  ./configure --prefix=$INSTALL_DIR --without-gvc --with-gcc-arch=native --with-bzlib=yes --with-djvu=yes --with-fftw=yes --with-fontconfig=yes --with-freetype=yes --with-gslib=yes --with-gvc=yes --with-heic=yes --with-jbig=yes --with-jemalloc=yes --with-jpeg=yes --with-lcms=yes --with-lqr=yes --with-lzma=yes --with-magick-plus-plus=yes --with-openexr=yes --with-openjp2=yes --with-pango=yes --with-perl=yes --with-png=yes --with-raqm=yes --with-raw=yes --with-rsvg=yes --with-tcmalloc=yes --with-tiff=yes --with-webp=yes --with-wmf=yes --with-x=yes --with-xml=yes --with-zip=yes --with-zlib=yes --with-zstd=yes
+  ./configure --prefix=$INSTALL_DIR --without-gvc --with-bzlib=yes --with-heic=yes --with-jbig=yes --with-jpeg=yes --with-png=yes
   make && make install
   cd ..
   rm -rf $IMAGE_MAGICK_DIR
