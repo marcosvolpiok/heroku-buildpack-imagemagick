@@ -37,7 +37,7 @@ if [ ! -f $CACHE_FILE ]; then
   cd $IMAGE_MAGICK_DIR
   export CPPFLAGS="-I$INSTALL_DIR/include"
   export LDFLAGS="-L$INSTALL_DIR/lib"
-  ./configure --prefix=$INSTALL_DIR --without-gvc --with-bzlib=yes --with-heic=yes --with-jbig=yes --with-jpeg=yes --with-png=yes
+  ./configure --prefix=$INSTALL_DIR --without-gvc --with-heic=yes --with-jpeg=yes --with-png=yes
   make && make install
   cd ..
   rm -rf $IMAGE_MAGICK_DIR
